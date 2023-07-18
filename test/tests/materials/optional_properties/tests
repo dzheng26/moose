@@ -39,6 +39,12 @@
     cli_args = "Materials/active='before' Materials/before/expect=false Materials/before/adexpect=false"
     requirement = "Optional material property objects that cannot be resolved shall evaluate to false"
   []
+  [prop_on_block0]
+    type = RunApp
+    input = material.i
+    cli_args = "Materials/active='after0 after1 prop adprop' Materials/prop/block=0 Materials/after1/expect=false"
+    requirement = "Optional material property objects can be defined for block 0 but not for block1"
+  []
 
   [material_error]
     requirement = "The optional material property system use from a material object shall return"
