@@ -17,7 +17,7 @@
       type = Exodiff
       input = material.i
       exodiff = material_after.e
-      cli_args = "Materials/active='after prop adprop' Outputs/file_base=material_after"
+      cli_args = "Materials/active='after0 after1 prop adprop' Outputs/file_base=material_after"
       detail = "is a material that comes after the providing material"
     []
     [auxkernel]
